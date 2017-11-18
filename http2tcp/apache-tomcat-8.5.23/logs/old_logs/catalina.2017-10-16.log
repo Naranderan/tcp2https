@@ -1,0 +1,618 @@
+16-Oct-2017 18:05:10.802 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+16-Oct-2017 18:05:10.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+16-Oct-2017 18:05:10.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+16-Oct-2017 18:05:10.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+16-Oct-2017 18:05:10.835 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-97-generic
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/likewise-open/ZOHOCORP/naran-3387/Softwares/Languages/java/jdk1.8.0_40/jre
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_40-b25
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/conf/logging.properties
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Oct-2017 18:05:10.836 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Oct-2017 18:05:10.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Oct-2017 18:05:10.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:05:10.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:05:10.837 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/temp
+16-Oct-2017 18:05:10.837 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+16-Oct-2017 18:05:11.353 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:05:11.373 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Oct-2017 18:05:11.377 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 18:05:11.644 SEVERE [main] org.apache.tomcat.util.net.SSLUtilBase.getStore Failed to load keystore type [JKS] with path [./.keystore] due to [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)]
+ java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+16-Oct-2017 18:05:11.646 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["https-jsse-nio-8443"]
+ java.lang.IllegalArgumentException: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 20 more
+
+16-Oct-2017 18:05:11.646 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8443]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8443]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:113)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	... 13 more
+Caused by: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 20 more
+
+16-Oct-2017 18:05:11.647 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:05:11.648 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Oct-2017 18:05:11.649 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 1504 ms
+16-Oct-2017 18:05:11.710 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Oct-2017 18:05:11.710 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+16-Oct-2017 18:05:11.718 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager]
+16-Oct-2017 18:05:11.814 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_1_1.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.814 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_1_2.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.815 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_2_0.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.815 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_0.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.815 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_2_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.815 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.816 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_2.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.816 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-app_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.816 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-fragment_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.816 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-common_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.816 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_7.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.816 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_3.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.817 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_web_services_1_4.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:11.817 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_web_services_client_1_4.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:05:12.074 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.BasicAuthenticator[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+16-Oct-2017 18:05:12.075 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Oct-2017 18:05:12.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager] has finished in [358] ms
+16-Oct-2017 18:05:12.077 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples]
+16-Oct-2017 18:05:12.482 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.FormAuthenticator[/examples]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+16-Oct-2017 18:05:12.483 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Oct-2017 18:05:12.483 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples] has finished in [406] ms
+16-Oct-2017 18:05:12.483 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/ROOT]
+16-Oct-2017 18:05:12.606 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/ROOT] has finished in [123] ms
+16-Oct-2017 18:05:12.606 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager]
+16-Oct-2017 18:05:12.622 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.BasicAuthenticator[/manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+16-Oct-2017 18:05:12.622 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Oct-2017 18:05:12.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager] has finished in [17] ms
+16-Oct-2017 18:05:12.623 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/docs]
+16-Oct-2017 18:05:12.652 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/docs] has finished in [29] ms
+16-Oct-2017 18:05:12.654 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:05:12.662 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:05:12.664 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 1015 ms
+16-Oct-2017 18:06:10.616 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+16-Oct-2017 18:06:10.786 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+16-Oct-2017 18:21:00.073 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+16-Oct-2017 18:21:00.074 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:21:00.125 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 18:21:00.125 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:21:00.176 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Oct-2017 18:21:00.334 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:21:00.335 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:21:00.335 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:21:00.336 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 18:21:00.336 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 18:21:00.336 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:21:01.612 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+16-Oct-2017 18:21:01.614 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-97-generic
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/likewise-open/ZOHOCORP/naran-3387/Softwares/Languages/java/jdk1.8.0_40/jre
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_40-b25
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+16-Oct-2017 18:21:01.615 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/conf/logging.properties
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:21:01.616 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+16-Oct-2017 18:21:01.617 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/temp
+16-Oct-2017 18:21:01.617 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+16-Oct-2017 18:21:01.730 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:21:01.744 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Oct-2017 18:21:01.747 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 18:21:01.955 SEVERE [main] org.apache.tomcat.util.net.SSLUtilBase.getStore Failed to load keystore type [JKS] with path [./.keystore] due to [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)]
+ java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+16-Oct-2017 18:21:01.956 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["https-jsse-nio-8443"]
+ java.lang.IllegalArgumentException: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 20 more
+
+16-Oct-2017 18:21:01.957 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8443]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8443]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:113)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:115)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.initialiseSsl(AbstractJsseEndpoint.java:86)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:225)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	... 13 more
+Caused by: java.io.FileNotFoundException: /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/.keystore (No such file or directory)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:90)
+	at sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:188)
+	at org.apache.tomcat.util.file.ConfigFileLoader.getInputStream(ConfigFileLoader.java:96)
+	at org.apache.tomcat.util.net.SSLUtilBase.getStore(SSLUtilBase.java:132)
+	at org.apache.tomcat.util.net.SSLHostConfigCertificate.getCertificateKeystore(SSLHostConfigCertificate.java:187)
+	at org.apache.tomcat.util.net.jsse.JSSEUtil.getKeyManagers(JSSEUtil.java:183)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.createSSLContext(AbstractJsseEndpoint.java:113)
+	... 20 more
+
+16-Oct-2017 18:21:01.958 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:21:01.959 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+16-Oct-2017 18:21:01.961 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 694 ms
+16-Oct-2017 18:21:01.981 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+16-Oct-2017 18:21:01.981 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+16-Oct-2017 18:21:01.988 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager]
+16-Oct-2017 18:21:02.073 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_1_1.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.073 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_1_2.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.074 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_2_0.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.074 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_0.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.074 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_2_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.075 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.075 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_2.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.075 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-app_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.076 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-fragment_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.076 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-common_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.076 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_7.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.076 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_3.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.077 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_web_services_1_4.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.077 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_web_services_client_1_4.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+16-Oct-2017 18:21:02.213 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.BasicAuthenticator[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+16-Oct-2017 18:21:02.214 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Oct-2017 18:21:02.215 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager] has finished in [227] ms
+16-Oct-2017 18:21:02.215 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples]
+16-Oct-2017 18:21:02.332 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.FormAuthenticator[/examples]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+16-Oct-2017 18:21:02.332 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Oct-2017 18:21:02.333 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples] has finished in [118] ms
+16-Oct-2017 18:21:02.333 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/ROOT]
+16-Oct-2017 18:21:02.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/ROOT] has finished in [54] ms
+16-Oct-2017 18:21:02.388 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager]
+16-Oct-2017 18:21:02.402 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.BasicAuthenticator[/manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+16-Oct-2017 18:21:02.403 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+16-Oct-2017 18:21:02.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager] has finished in [15] ms
+16-Oct-2017 18:21:02.403 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/docs]
+16-Oct-2017 18:21:02.416 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/docs] has finished in [13] ms
+16-Oct-2017 18:21:02.418 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 18:21:02.424 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 18:21:02.426 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 465 ms
+16-Oct-2017 18:21:24.047 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+16-Oct-2017 18:21:24.051 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+16-Oct-2017 18:21:28.991 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+16-Oct-2017 18:21:29.000 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+16-Oct-2017 18:24:13.324 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+16-Oct-2017 18:24:13.325 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+16-Oct-2017 18:24:17.600 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+16-Oct-2017 18:24:17.608 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+16-Oct-2017 18:33:28.778 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+16-Oct-2017 18:33:28.778 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+16-Oct-2017 18:33:28.822 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+16-Oct-2017 18:33:28.822 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+16-Oct-2017 21:23:05.189 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+16-Oct-2017 21:23:05.189 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 21:23:05.240 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 21:23:05.240 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 21:23:05.291 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+16-Oct-2017 21:23:05.303 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 21:23:05.305 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+16-Oct-2017 21:23:05.306 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-7777"]
+16-Oct-2017 21:23:05.307 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 21:23:05.307 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-jsse-nio-8443"]
+16-Oct-2017 21:23:05.307 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]

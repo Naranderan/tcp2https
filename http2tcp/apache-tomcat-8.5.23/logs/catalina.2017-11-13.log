@@ -1,0 +1,376 @@
+13-Nov-2017 16:33:50.137 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5.23
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Sep 28 2017 10:30:11 UTC
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server number:         8.5.23.0
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Linux
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            4.4.0-97-generic
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             /home/likewise-open/ZOHOCORP/naran-3387/Softwares/Languages/java/jdk1.8.0_40/jre
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           1.8.0_40-b25
+13-Nov-2017 16:33:50.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+13-Nov-2017 16:33:50.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+13-Nov-2017 16:33:50.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         /home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+13-Nov-2017 16:33:50.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/conf/logging.properties
+13-Nov-2017 16:33:50.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+13-Nov-2017 16:33:50.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+13-Nov-2017 16:33:50.159 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+13-Nov-2017 16:33:50.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+13-Nov-2017 16:33:50.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23
+13-Nov-2017 16:33:50.160 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/temp
+13-Nov-2017 16:33:50.160 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+13-Nov-2017 16:33:50.325 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-7777"]
+13-Nov-2017 16:33:50.341 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Nov-2017 16:33:50.344 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["https-jsse-nio-8443"]
+13-Nov-2017 16:33:50.348 SEVERE [main] org.apache.coyote.AbstractProtocol.init Failed to initialize end point associated with ProtocolHandler ["https-jsse-nio-8443"]
+ java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+
+13-Nov-2017 16:33:50.349 SEVERE [main] org.apache.catalina.core.StandardService.initInternal Failed to initialize connector [Connector[HTTP/1.1-8443]]
+ org.apache.catalina.LifecycleException: Failed to initialize component [Connector[HTTP/1.1-8443]]
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:113)
+	at org.apache.catalina.core.StandardService.initInternal(StandardService.java:549)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.core.StandardServer.initInternal(StandardServer.java:875)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:621)
+	at org.apache.catalina.startup.Catalina.load(Catalina.java:644)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.apache.catalina.startup.Bootstrap.load(Bootstrap.java:311)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:494)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler initialization failed
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:1000)
+	at org.apache.catalina.util.LifecycleBase.init(LifecycleBase.java:107)
+	... 12 more
+Caused by: java.net.BindException: Address already in use
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:437)
+	at sun.nio.ch.Net.bind(Net.java:429)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210)
+	at org.apache.tomcat.util.net.AbstractEndpoint.init(AbstractEndpoint.java:982)
+	at org.apache.tomcat.util.net.AbstractJsseEndpoint.init(AbstractJsseEndpoint.java:245)
+	at org.apache.coyote.AbstractProtocol.init(AbstractProtocol.java:620)
+	at org.apache.coyote.http11.AbstractHttp11Protocol.init(AbstractHttp11Protocol.java:66)
+	at org.apache.catalina.connector.Connector.initInternal(Connector.java:997)
+	... 13 more
+
+13-Nov-2017 16:33:50.350 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 16:33:50.351 INFO [main] org.apache.tomcat.util.net.NioSelectorPool.getSharedSelector Using a shared selector for servlet write/read
+13-Nov-2017 16:33:50.351 INFO [main] org.apache.catalina.startup.Catalina.load Initialization processed in 579 ms
+13-Nov-2017 16:33:50.372 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+13-Nov-2017 16:33:50.373 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet Engine: Apache Tomcat/8.5.23
+13-Nov-2017 16:33:50.380 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager]
+13-Nov-2017 16:33:50.462 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_1_1.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.462 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_1_2.dtd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.463 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_2_0.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.463 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_0.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.463 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-jsptaglibrary_2_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.463 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.463 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_2.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.464 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-app_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.464 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-fragment_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.464 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [web-common_3_1.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.464 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_7.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.464 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [jsp_2_3.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.465 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_web_services_1_4.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.465 WARNING [localhost-startStop-1] org.apache.tomcat.util.descriptor.DigesterFactory.locationFor The XML schema [javaee_web_services_client_1_4.xsd] could not be found. This is very likely to break XML validation if XML validation is enabled.
+13-Nov-2017 16:33:50.774 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.BasicAuthenticator[/host-manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+13-Nov-2017 16:33:50.774 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/host-manager]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+13-Nov-2017 16:33:50.776 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/host-manager] has finished in [395] ms
+13-Nov-2017 16:33:50.776 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples]
+13-Nov-2017 16:33:50.955 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.FormAuthenticator[/examples]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+13-Nov-2017 16:33:50.956 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/examples]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+13-Nov-2017 16:33:50.956 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/examples] has finished in [180] ms
+13-Nov-2017 16:33:50.956 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/ROOT]
+13-Nov-2017 16:33:51.044 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/ROOT] has finished in [88] ms
+13-Nov-2017 16:33:51.044 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager]
+13-Nov-2017 16:33:51.060 SEVERE [localhost-startStop-1] org.apache.catalina.core.ContainerBase.addChildInternal ContainerBase.addChild: start: 
+ org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:752)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [Pipeline[StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5117)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 10 more
+Caused by: org.apache.catalina.LifecycleException: Failed to start component [org.apache.catalina.authenticator.BasicAuthenticator[/manager]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardPipeline.startInternal(StandardPipeline.java:182)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 12 more
+Caused by: java.lang.NoSuchMethodError: javax.servlet.ServletContext.getVirtualServerName()Ljava/lang/String;
+	at org.apache.catalina.authenticator.AuthenticatorBase.startInternal(AuthenticatorBase.java:1141)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 14 more
+
+13-Nov-2017 16:33:51.061 SEVERE [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Error deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager]
+ java.lang.IllegalStateException: ContainerBase.addChild: start: org.apache.catalina.LifecycleException: Failed to start component [StandardEngine[Catalina].StandardHost[localhost].StandardContext[/manager]]
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:756)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:728)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:734)
+	at org.apache.catalina.startup.HostConfig.deployDirectory(HostConfig.java:1144)
+	at org.apache.catalina.startup.HostConfig$DeployDirectory.run(HostConfig.java:1878)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+13-Nov-2017 16:33:51.061 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/manager] has finished in [17] ms
+13-Nov-2017 16:33:51.061 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/docs]
+13-Nov-2017 16:33:51.075 INFO [localhost-startStop-1] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [/home/likewise-open/ZOHOCORP/naran-3387/Documents/Labs/ZCode/tcp_proxy/tcp2https/apache-tomcat-8.5.23/webapps/docs] has finished in [14] ms
+13-Nov-2017 16:33:51.077 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-7777"]
+13-Nov-2017 16:33:51.082 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 16:33:51.084 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in 732 ms
+13-Nov-2017 16:59:20.559 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 16:59:20.559 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 16:59:20.560 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 16:59:20.567 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 16:59:20.567 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 16:59:20.577 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:00:20.579 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:00:20.579 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:00:20.580 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:00:20.581 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:00:20.581 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:00:20.587 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:03:45.190 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:03:45.190 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:03:45.190 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:03:45.193 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:03:45.193 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:03:45.201 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:04:45.261 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:04:45.262 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:04:45.262 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:04:45.264 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:04:45.264 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:04:45.280 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:05:45.349 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:05:45.350 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:05:45.350 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:05:45.351 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:05:45.351 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:05:45.361 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:06:45.416 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:06:45.416 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:06:45.416 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:06:45.421 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:06:45.421 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:06:45.430 INFO [http-nio-7777-exec-2] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:07:45.476 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:07:45.476 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:07:45.476 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:07:45.477 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:07:45.477 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:07:45.484 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 17:08:45.546 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 17:08:45.546 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 17:08:45.546 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 17:08:45.548 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 17:08:45.548 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 17:08:45.554 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 19:45:19.313 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 19:45:19.313 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 19:45:19.313 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 19:45:19.314 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 19:45:19.315 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 19:45:19.321 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 19:47:20.597 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 19:47:20.598 INFO [http-nio-7777-exec-4] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 19:47:20.599 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 19:47:20.599 INFO [http-nio-7777-exec-4] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 19:47:20.599 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 19:47:20.599 INFO [http-nio-7777-exec-4] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-4] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-4] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 19:47:20.600 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 19:47:20.601 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 19:47:20.601 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 172.20.2.9  DFS Port: 80
+13-Nov-2017 19:47:20.601 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 19:47:20.601 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 19:47:20.601 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 19:47:20.601 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 19:47:20.602 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 19:47:20.602 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 19:47:20.602 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 19:47:20.602 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 19:47:20.603 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 19:47:20.603 INFO [http-nio-7777-exec-6] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 19:47:20.605 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 19:47:20.606 INFO [http-nio-7777-exec-4] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 19:47:20.605 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 20:06:56.182 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:06:56.182 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:06:56.182 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:06:56.182 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 20:06:56.182 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 20:06:56.183 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 20:08:56.290 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:08:56.290 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:08:56.291 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:09:11.685 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:09:11.685 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:09:11.685 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:09:11.685 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 20:09:11.685 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 20:09:11.686 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 20:09:39.871 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:09:39.872 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:09:39.872 INFO [http-nio-7777-exec-8] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:15:10.670 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:15:10.670 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:15:10.670 INFO [http-nio-7777-exec-10] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:15:46.294 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:15:46.295 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:15:46.295 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:15:46.296 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 20:15:46.297 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 20:15:46.297 INFO [http-nio-7777-exec-9] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 20:16:38.322 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:16:38.322 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:16:38.322 INFO [http-nio-7777-exec-1] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:16:59.594 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:16:59.594 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:16:59.594 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:16:59.594 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 20:16:59.594 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 20:16:59.595 INFO [http-nio-7777-exec-5] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 20:18:21.756 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:18:21.756 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:18:21.756 INFO [http-nio-7777-exec-7] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:19:25.489 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp *********Starting the convertion (HTTP -> TCP) ***********
+13-Nov-2017 20:19:25.489 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp Received Auth Header ::SimpleAuth
+13-Nov-2017 20:19:25.489 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp DFS IP: 127.0.0.1  DFS Port: 50020
+13-Nov-2017 20:19:25.489 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping http req to socket req *********
+13-Nov-2017 20:19:25.489 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Piping socket res to http res *********
+13-Nov-2017 20:19:25.490 INFO [http-nio-7777-exec-3] HTTP2TCPServlet.convertHttp2Tcp ********* Closing the resoureces *********
+13-Nov-2017 21:09:14.440 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-7777"]
+13-Nov-2017 21:09:14.442 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["https-jsse-nio-8443"]
+13-Nov-2017 21:09:14.442 INFO [Thread-5] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 21:09:14.493 INFO [Thread-5] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+13-Nov-2017 21:09:14.505 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-7777"]
+13-Nov-2017 21:09:14.506 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["ajp-nio-8009"]
+13-Nov-2017 21:09:14.507 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-7777"]
+13-Nov-2017 21:09:14.508 INFO [Thread-5] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["https-jsse-nio-8443"]
+13-Nov-2017 21:09:14.508 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["https-jsse-nio-8443"]
+13-Nov-2017 21:09:14.508 INFO [Thread-5] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["ajp-nio-8009"]
